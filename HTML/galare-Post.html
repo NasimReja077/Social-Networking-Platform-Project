@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Post / Multiple Image & Video Post</title>
+     <!--Font Awesome Icons-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+     <!-- Stylesheet -->
+     <link rel="stylesheet" href="../CSS/galare-Post.css">
+</head>
+<body>
+     <div class="container"><!--All Container-->
+          <input type="file" id="file-input" accept="image/png, image/jpeg" onchange="preview()" multiple> <!--File Upload-->
+          <label for="file-input"> <!--Input File-->
+              <i class="fas fa-upload"></i> &nbsp; Choose A Photo
+          </label>
+          <p id="num-of-files">No Files Chosen</p>
+          <div id="images"></div> <!--Output File-->
+          <hr>
+          <div class="wrapper"> <!--Text Container-->
+              <h2>Caption:</h2>
+              <textarea spellcheck="false" placeholder="Type something here..." required></textarea>
+          </div>
+          <button type="submit">Upload</button>
+      </div>
+      <script src="../JS/galare-post.js"></script>
+</body>
+</html>

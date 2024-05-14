@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* font-family: 'Monoton', cursive; logo*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap');
+
+
+*,*::before,*::after{
+     margin: 0;
+     padding: 0;
+     outline: 0;
+     box-sizing: border-box;
+     list-style: none;
+     text-decoration: none;
+     border: none;
+}
+body{
+  /* <!--=======BODY BACKGROUND COLOR========--> */
+  background-color: #e5e5f7;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(41, 17, 4);
+  overflow-x: hidden;
+}
+
+header{
+  background: #001d3d;
+  display: flex;
+  justify-content:space-around;
+  border-radius: 20px;
+  border-radius: 0px 0px 15px 15px;
+  margin: 0px 52px;
+}
+header h3{
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  font-family: 'Cherry Cream Soda', cursive;
+  text-align: center;
+  padding: 20px 0;
+  letter-spacing: 3px;
+}
+
+.container{
+  width: 93%;
+  margin: 0 auto;
+}
+
+/* <!--===============MARNE SECTION======================--> */
+main{
+     position: relative;
+     top: 0.4rem;
+   }
+   main .container{
+     display: grid;
+     grid-template-columns: auto;
+     column-gap: 3rem;
+     position: relative;
+     top: 76px;
+   }
+   
+  .middle_container{
+    width: 100%;
+    /* height: 100vh; */
+    /* background: #55a1d7; */
+    /* border-radius: 20px 20px 0px 0px; */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+    border-radius: 25px 25px 0 0;
+    padding: 7px;
+  }
+   
+.User-Posted{
+  margin-top: 65px;
+  max-width: 1300px;
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 35px;
+}
+section{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 20px;
+}
+section .treadingBox{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+.treadingBox .treadingBox_content{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transform: translate(-50%, -50%);
+}
+.treadingBox_content .close{
+     position: absolute;
+     top: 0;
+     left: -51px;
+     font-size: 33px;
+     color: #fff;
+     cursor: pointer;
+   }
+   .treadingBox_content .close:hover{
+     opacity: 0.8;
+   }
+   section .logo_icons{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-bottom: 20px;
+   }
+   section .logo_icons a{
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+   }
+   section .logo_icons .logoImg{
+     height: 55px;
+     width: 55px;
+     border-radius: 50%;
+     overflow: hidden;
+     border: 3px solid rgba(128, 99, 192, 0.51);
+   }
+   section .logo_icons .text_content{
+     display: flex;
+     flex-direction: column;
+     margin-left: 10px;
+     color: #333;
+     font-size: 16px;
+     font-weight: 500;
+   }
+   .logo_icons .text_content .name{
+     font-size: 18px;
+     color: rgb(209, 202, 212);
+     font-weight: bold;
+     
+   }
+   .logo_icons .text_content .followers{
+     font-size: 12px;
+     margin-top: -5px;
+   }
+   .logo_icons .text_content .followers:hover{
+    color: #7d2ae8;
+   }
+   .logo_icons .text_content .follow-btn{
+    font-size: 14px;
+    color: deepskyblue;
+    border: 2px solid blue;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    width: 70px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    top: 32px;
+    position: absolute;
+    left: 280px;
+    border-radius: 6px;
+    font-weight: bold;
+   }
+   .logo_icons .text_content .follow-btn:hover{
+    border: 3px solid #001d3d;
+   }
+   section .logo_icons .icons i{
+     height: 35px;
+     width: 35px;
+     background: #a790c4;
+     text-align: center;
+     line-height: 35px;
+     font-size: 16px;
+     color: #fff;
+     border-radius: 4px;
+     margin: 0 5px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+   }
+   .treadingBox .logo_icons .icons i:hover{
+     color: #fff;
+     background: #7d2ae8;
+   }
+   section .treadingBox .showImg{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .treadingBox .showImg .image{
+    max-height: 700px;
+    max-width: 900px;
+  }
+  .showImg .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 18px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.36);
+  }
+
+  section .image-gallery-box{
+    max-width: 1300px;
+    min-height: 100vh;
+    width: 100%;
+    margin: -22px;
+    /* padding-right: 10px; */
+  }
+
+  .image-gallery-box .image-container{
+    columns: 3;
+    margin-top: 50px;
+    gap: 15px;
+  }
+
+  .image-container img{
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  }
+
+  .image-container .image-box{
+    position: relative;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+  .image-box .logo_icons{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    padding: 17px 23px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .image-box:hover .logo_icons{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .image-box .logo_icons .icons i{
+    color: #e1dada;
+    background: #132477;
+  }
+
+  /* .logo_icons .icons i:hover{
+    color: #707070;
+  } */
+
+  section .image-gallery-box .logo_icons .text_content{
+    color: #b7adf6;
+    font-size: 16px
+  }
+  section .image-gallery-box .text_content .followers{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -4px;
+  }
+
+
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .container{
+      width: 90%;
+    }
+    main .container{
+      grid-template-columns: auto;  /* auto chang *//*10rem is stable in crome, fier fox is 5rem*/  
+      gap: 1rem;
+    }
+    .middle_container{
+      border-radius: 20px 20px 0px 0px;
+    }
+    header h3{
+      font-size: 30px;
+      font-weight: 700;
+    }
+    
+  .User-Posted{
+    margin-top: 7px;
+    width: 98%;
+    margin: -14px;
+  }
+  .treadingBox .treadingBox_content{
+    width: 87%;
+    height: 86%;
+  }
+  .treadingBox_content .close {
+    top: -50px;
+    left: 600px;
+  }
+  section .logo_icons{
+    padding-bottom: 37px;
+  }
+  
+  .image-gallery-box .image-container{
+    columns: 2;
+  }
+  section .logo_icons .logoImg{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px;
+  }
+  section .logo_icons .text_content{
+    margin-left: 14px;
+    font-weight: 600;
+  }
+  .logo_icons .text_content .name{
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  .logo_icons .text_content .follow-btn{
+    font-size: 15px;
+    padding: 12px;
+    width: 75px;
+    height: 32px;
+    top: 69px;
+    left: 85%;
+
+  }
+  section .logo_icons .icons i{
+    background: #7d2ae8;
+    color: #fff;
+    font-weight: bold;
+    height: 36px;
+    width: 40px;
+    border-radius: 5px;
+
+  }
+  .image-box .logo_icons .icons i{
+    opacity: 0;
+  }
+  section .image-gallery-box{
+    margin: 0px;
+  }
+  .showImg .image img {
+    height: 86%;
+   }
+
+  }
+   /* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) */
+
+   @media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+     /* Your Styles... */ 
+
+     .container{
+      width: 87%;
+     }
+     main{
+      top: -2.6px;
+      /* z-index: -5; */
+     }
+    main .container{
+      display: grid;
+      grid-template-columns: auto;
+      gap: 0;
+    }
+
+    header{
+      width: 90%;
+      margin-left: 20px;
+    }
+
+    header h3{
+      font-size: 25px;
+      font-weight: 500;
+    }
+    
+    
+    
+    
+    .middle_container{
+      border-radius: 10px 10px 0px 0px;
+      width: 105%;
+    }
+    
+    
+  .User-Posted{
+    border: 3px solid white;
+    margin-top: 75px;
+    max-width: 1200px;
+    min-height: 100vh;
+    width: 100%;
+    margin-right: 10px;
+
+  }
+  
+  .treadingBox .treadingBox_content{
+    width: 95%;
+    height: 87%;
+    top: 55%;
+  }
+
+  .treadingBox_content .close {
+    top: -10%;
+    left: 317px;
+  }
+  section .logo_icons {
+    padding-bottom: 35px;
+  }
+  section .logo_icons .logoImg {
+    height: 37px;
+    width: 37px;
+    margin-left: 2px;
+    margin-top: -45px;
+  }
+  section .logo_icons .text_content {
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: -50px;
+  }
+  .logo_icons .text_content .followers {
+    font-size: 10px;
+    margin-top: -5px;
+  }
+  .logo_icons .text_content .follow-btn{
+    top: 22px;
+    left: 265px;
+    width: 75px;
+    height: 35px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .icons{
+    display: flex;
+    margin-top: 57px;
+    align-items: center;
+    flex-direction: initial;
+    position: relative;
+    left: -110px;
+    top: 5px;
+  }
+  .showImg .image img {
+    height: 77%;/**/
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.36)
+  }
+  section .image-gallery-box{
+    width: 116%;
+    margin: -97px;
+    padding-bottom: 47px;
+    margin-top: -137px;
+  }
+  section .logo_icons .icons i{
+    background: #7d2ae8;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 31px;
+    font-size: 12px;
+  }
+
+  .image-box .logo_icons{
+    bottom: 16px;
+    left: 0;
+    width: 146px;
+
+  }
+  .logo_icons .text_content .name{
+    font-size: 15px;
+  }
+  .image-box .logo_icons .icons i{
+    opacity: 0;
+  }
+  .image-container .image-box{
+    margin: 22px 76px;
+  }
+  .image-container img{
+    width: 146%;
+  }
+  .image-gallery-box .image-container{
+    columns: 1;
+  }
+  .image-gallery-box header{
+    font-size: 25px;
+  }
+  
+  }

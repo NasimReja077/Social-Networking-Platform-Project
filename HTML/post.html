@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Post</title>
+     <link rel="stylesheet" href="../CSS/post.css">
+     <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+     <div class="container"><!-- all box container groupe -->
+          <div class="wrapper"><!-- all In-are Contain group & sizing -->
+            <section class="post">
+              <!-- <div class="back-button"><a href="#"><i class="fas fa-arrow-left"></i></a></div> -->
+              <header>Create Post</header>
+              <hr>
+              <form action="#">
+                <div class="content"><!-- Icon & Name -->
+                  <img src="../ICON/im_icon/logo.jpeg" alt="logo">
+                  <div class="details"><!-- user details -->
+                    <p>User Name</p>
+                    <div class="privacy">
+                      <i class="fas fa-user-friends"></i>
+                      <span>Friends</span>
+                      <i class="fas fa-caret-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <textarea placeholder="What's on your mind," spellcheck="false" required></textarea><!-- Writing area  -->
+                <div class="upload"><!-- 2 Button Group-->
+                <div class="options">
+                  <ul class="list">
+                    <a href="../HTML/short-post.html"><li><img src="../ICON/im_icon/shorts.png" alt="gallery"></li></a>
+                  </ul>
+                </div>
+                <div class="gallery options">
+                  <ul class="list">
+                    <a href="../HTML/galare-Post.html"><li><img src="../ICON/gallery.svg" alt="gallery"></li></a>
+                  </ul>
+                </div>
+              </div>
+                
+                <button>Post</button>
+              </form>
+            </section>
+
+            <!-- End 1 page  -->
+            <!-- Privacies page -->
+            <section class="audience"> <!-- all Box Container -->
+              <header>
+                <div class="arrow-back"><i class="fas fa-arrow-left"></i></div>
+                <p>Select Audience</p>
+              </header>
+              <div class="content"> <!--Text Container -->
+                <p>Who can see your post?</p>
+                <span>Your post will show up in News Feed, on your profile and in search results.</span>
+              </div>
+              <ul class="list"> <!-- all radio batten group -->
+                <li> <!-- radio Group Container -->
+                  <div class="column">
+                    <div class="icon"><i class="fas fa-globe-asia"></i></div><!-- Icon  -->
+                    <div class="details"><!-- Details Name text-->
+                      <p>Public</p>
+                      <span>Anyone on or off Facebook</span>
+                    </div>
+                  </div>
+                  <div class="radio"></div> <!-- radio butten  -->
+                </li>
+                <li class="active"> <!-- Problem is hear radio batten is not clickable -->
+                  <div class="column">
+                    <div class="icon"><i class="fas fa-user-friends"></i></div>
+                    <div class="details">
+                      <p>Friends</p>
+                      <span>Your friends on Facebook</span>
+                    </div>
+                  </div>
+                  <div class="radio"></div>
+                </li>
+                <li>
+                  <div class="column">
+                    <div class="icon"><i class="fas fa-user"></i></div>
+                    <div class="details">
+                      <p>Specific</p>
+                      <span>Only show to some friends</span>
+                    </div>
+                  </div>
+                  <div class="radio"></div>
+                </li>
+                <li>
+                  <div class="column">
+                    <div class="icon"><i class="fas fa-lock"></i></div>
+                    <div class="details">
+                      <p>Only me</p>
+                      <span>Only you can see your post</span>
+                    </div>
+                  </div>
+                  <div class="radio"></div>
+                </li>
+                <li>
+                  <div class="column">
+                    <div class="icon"><i class="fas fa-cog"></i></div>
+                    <div class="details">
+                      <p>Custom</p>
+                      <span>Include and exclude friends</span>
+                    </div>
+                  </div>
+                  <div class="radio"></div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <script src="../JS/post.js"></script>
+</body>
+</html>

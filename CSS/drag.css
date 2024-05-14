@@ -1,0 +1,244 @@
+
+#back_button{
+     margin: 10px;
+    padding: 10px;
+    height: 59px;
+    width: 59px;
+    background:white;
+    border-radius: 15px;
+}
+#back_button:hover{
+     border: 3px solid #a5e300;
+}
+#back_button i{
+     text-decoration: none;
+     display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+    color:#8895bb;
+    cursor: pointer;
+    /* transition: transform 250ms; */
+}
+#back_button i:hover{
+     text-decoration: none;
+     /* transform: translateY(-5px); */
+}
+
+#drag_paage_contaner{
+	border-radius: 20px;
+	left: 30%;
+	top: 3%;
+	position: absolute;
+
+}
+
+ /* .zoon{
+	padding-left: 40%;
+	padding-top: 10%;
+}  */
+.drop-zone {
+	max-width: 800px;
+	height: 470px;
+	width: 125%;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: 6px dashed;
+	border-image: linear-gradient(to right, red, orange) 1;
+	border-radius: 10px;
+	margin: 50px;
+}
+.drop-zone span{
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
+	font-size: 23px;
+	color:#ca5cdd;
+	margin-left: 3px;
+	align-items: center;
+	display: flex;
+	
+}
+.drop-zone span i{
+	margin: 10px;
+	font-size: 70px;
+	font-weight: bold;
+	color: #ca5cdd;
+	position: absolute;
+	top: 167px;
+	left: 67%;
+}
+
+.drop-zone--over {
+	border-style: solid;
+}
+
+.drop-zone__input {
+	display: none;
+}
+
+.drop-zone__thumb {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #cccccc;
+	background-size: cover;
+	position: relative;
+}
+
+.drop-zone__thumb::after {
+	content: attr(data-label);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 5px 0;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.75);
+	font-size: 14px;
+	text-align: center;
+}
+.action-btn{
+	max-width: 467px;
+     padding: 10px 16px;
+     border-radius: 40px;
+     background: #ddd;
+     border: 2px solid #e71717;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     left: 23%;
+	 margin-top: 3%;
+	 margin-left: -3%;
+	 margin-right: 12px;
+}
+.action-btn button{
+	margin: 10px;
+     height: 60px;
+     width: 180px;
+     font-family: "Montserrat", sans-serif;
+     font-size: 30px;
+     background-color: #8895bb;
+     border-radius: 25px;
+	color: #ddd;
+     cursor: pointer;
+	border: 0;
+	box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.37);
+	transition: 0.5s;
+}
+.action-btn button:hover{
+	opacity: 1.5;
+	color: #dcd2d2;
+	font-size: 27px;
+	transition: 0.5s;
+}
+.action-btn button:active {
+	transform: translateY(4px);
+	box-shadow: 0 3px darken(10%, 20%);
+}
+a:link {
+     color: #ddd;
+     text-decoration: none;
+   }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	#drag_paage_contaner{
+		width: 70%;
+		height: 416px;
+		top: 16%;
+		left: 15%;
+	}
+	h3{
+		top: -7px;
+		font-size: 36px;
+		left: 32%;
+	}
+	.drop-zone{
+		height: 335px;
+		padding: 7px;
+		margin: 28px;
+		border-radius: 22px;
+	}
+	.drop-zone span{
+		font-size: 30px;
+		margin-left: 7px;
+	}
+	.drop-zone span i{
+		margin: 7px;
+		font-size: 65px;
+		top: 77px;
+		left: 45%;
+	}
+	.action-btn{
+		max-width: 410px;
+		padding: 2px 0px;
+		border-radius: 75px;
+		margin-top: 8%;
+		margin-left: 10%;
+	}
+	.action-btn button{
+		margin: 5px;
+		height: 50px;
+		width: 180px;
+		font-size: 25px;
+		box-shadow: none;
+	}
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+	#back_button{
+		height: 37px;
+		width: 37px;
+		border-radius: 7px;
+		margin: 0px;
+		padding: 0px;
+	}
+	#back_button i{
+		font-size: 33px;
+	} 
+	h3{
+		top: -10px;
+		font-size: 23px;
+		left: 25%;
+	}
+
+	#drag_paage_contaner{
+		width: 93%;
+		height: 455px;
+		top: 10%;
+		left: 3%;
+	}
+	.drop-zone{
+		height: 415px;
+		padding: 5px;
+		margin: 9px;
+		border-radius: 10px;
+	}
+	.drop-zone span{
+		font-size: 25px;
+		margin-left: 5px;
+	}
+
+	.drop-zone span i{
+		font-size: 70px;
+		left: 40%;
+		top: 93px;
+	}
+	.action-btn{
+		margin-top: 8%;
+		margin-left: 1%;
+		border-radius: 17px;
+		padding: 0px;
+		justify-content: space-around;
+	}
+	.action-btn button{
+		height: 60px;
+		width: 140px;
+		font-size: 17px;
+		border-radius: 10px;
+		box-shadow: none;
+	}
+}

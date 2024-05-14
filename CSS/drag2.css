@@ -1,0 +1,250 @@
+#back_button{
+     margin: 10px;
+    padding: 10px;
+    height: 59px;
+    width: 59px;
+    /* background: #4955fd; */
+    border-radius: 15px;
+}
+#back_button:hover{
+     border: 3px solid #a5e300;
+}
+#back_button i{
+     text-decoration: none;
+     display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #a5e300;
+    cursor: pointer;
+    transition: transform 250ms;
+}
+#back_button i:hover{
+     text-decoration: none;
+     transform: translateY(-5px);
+}
+
+#drag_paage_contaner{
+	width: 35%;
+	height: 530px;
+	/* 3 */
+	box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.37);
+	border-radius: 20px;
+	left: 33%;
+	top: 4%;
+	position: absolute;
+
+}
+h3{
+	position: absolute;
+	margin-bottom: 20px;
+	top: -10px;
+	font-size: 40px;
+	font-weight: 700;
+	left: 40%;
+	color: #4955fd;
+	text-align: center;
+	text-decoration: 3px solid rgb(37, 230, 91) underline;
+}
+ /* .zoon{
+	padding-left: 40%;
+	padding-top: 10%;
+}  */
+.drop-zone {
+	max-width: 800px;
+	height: 480px;
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: 4px dashed #009578;
+	border-radius: 10px;
+	margin: 13px;
+}
+.drop-zone span{
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	color:#4955fd;
+	margin-left: 10px;
+}
+.drop-zone span i{
+	margin: 10px;
+	font-size: 50px;
+	font-weight: bold;
+	color: burlywood;
+	position: absolute;
+	top: 143px;
+	left: 46%;
+}
+
+.drop-zone--over {
+	border-style: solid;
+}
+
+.drop-zone__input {
+	display: none;
+}
+
+.drop-zone__thumb {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #cccccc;
+	background-size: cover;
+	position: relative;
+}
+
+.drop-zone__thumb::after {
+	content: attr(data-label);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 5px 0;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.75);
+	font-size: 14px;
+	text-align: center;
+}
+.action-btn{
+	max-width: 460px;
+     padding: 6px 3px;
+     border-radius: 12px;
+     background: #ddd;
+     border: 2px solid #e71717;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin-top: 7%;
+	 margin-left: 5%;
+}
+.action-btn button{
+	margin: 10px;
+     height: 55px;
+     width: 180px;
+     font-family: "Montserrat", sans-serif;
+     font-size: 27px;
+     background-color: #8895bb;
+     border-radius: 10px;
+	color: #ddd;
+     cursor: pointer;
+	border: 0;
+	box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.37);
+	transition: 0.5s;
+}
+.action-btn button:hover{
+	opacity: 1.5;
+	color: #dcd2d2;
+	font-size: 27px;
+	transition: 0.5s;
+}
+.action-btn button:active {
+	transform: translateY(4px);
+	box-shadow: 0 3px darken(10%, 20%);
+}
+a{
+     color: #ddd;
+     text-decoration: none;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	#drag_paage_contaner{
+		width: 73%;
+		height: 440px;
+		top: 5%;
+		left: 15%;
+          border-radius: 10px;
+	}
+	h3{
+		top: -7px;
+		font-size: 36px;
+		left: 32%;
+	}
+	.drop-zone{
+          height: 396px;
+          padding: 7px;
+          margin: 10px;
+          border-radius: 12px;
+	}
+	.drop-zone span{
+		font-size: 22px;
+		margin-left: 5px;
+	}
+	.drop-zone span i{
+		margin: 7px;
+		font-size: 60px;
+		top: 112px;
+		left: 44%;
+	}
+	.action-btn{
+		max-width: 410px;
+		padding: 2px 0px;
+		border-radius: 15px;
+		margin-top: 6%;
+		margin-left: 14%;
+	}
+	.action-btn button{
+		margin: 5px;
+		height: 50px;
+		width: 180px;
+		font-size: 25px;
+		box-shadow: none;
+	}
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+	#back_button{
+		height: 37px;
+		width: 37px;
+		border-radius: 7px;
+		margin: 0px;
+		padding: 0px;
+	}
+	#back_button i{
+		font-size: 33px;
+	} 
+	h3{
+		top: -10px;
+		font-size: 23px;
+		left: 25%;
+	}
+
+	#drag_paage_contaner{
+		width: 93%;
+		height: 455px;
+		top: 10%;
+		left: 3%;
+	}
+	.drop-zone{
+		height: 415px;
+		padding: 5px;
+		margin: 9px;
+		border-radius: 10px;
+	}
+	.drop-zone span{
+		font-size: 25px;
+		margin-left: 5px;
+	}
+
+	.drop-zone span i{
+		font-size: 70px;
+		left: 40%;
+		top: 93px;
+	}
+	.action-btn{
+		margin-top: 8%;
+		margin-left: 1%;
+		border-radius: 17px;
+		padding: 0px;
+		justify-content: space-around;
+	}
+	.action-btn button{
+		height: 60px;
+		width: 140px;
+		font-size: 17px;
+		border-radius: 10px;
+		box-shadow: none;
+	}
+}

@@ -1,0 +1,29 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.icon-boxs{
+     display: flex;
+     justify-content: space-between;
+     background: plum;
+     width: 50%;
+     height: 250px;
+     align-items: center;
+     margin-left: 273px;
+     margin-top: 200px;
+}
+.icon-boxs i{
+     font-size: 30px;
+     color:aliceblue;
+     font-weight: bold;
+     margin: 10px;
+     cursor: pointer;
+     background-color: cornflowerblue;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+     border-radius: 6px;
+     display: flex;
+     align-items: center;
+}

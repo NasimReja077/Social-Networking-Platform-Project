@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+html{
+  scroll-snap-align: y mandatory;/*not working*/
+  
+}
+body{
+  /* <!--=======BODY BACKGROUND COLOR========--> */
+  background-color: #e5e5f7;
+  opacity: 0.9;
+  background-image:  radial-gradient(#3139ce 1.2000000000000002px, transparent 1.2000000000000002px), radial-gradient(#3139ce 1.2000000000000002px, #e5e5f7 1.2000000000000002px);
+  background-size: 48px 48px;
+  background-position: 0 0,24px 24px;
+/* <!--=======BODY BACKGROUND COLOR END ========--> */
+
+  font-family: 'Poppins', sans-serif;
+  color: rgb(41, 17, 4);
+  overflow-x: hidden;
+
+     color: white;
+     background-color: black;
+     height: 100vh;
+     display: grid;
+     place-items: center;
+}
+
+/* video Container Start */
+.Short_videos{
+     position: relative;
+     height: 750px;
+     background-color: white;
+     overflow: scroll;
+     width: 100%;
+     max-width: 400px;
+     scroll-snap-align: y mandator;/* not working*/
+     border-radius: 20px;
+}
+
+.Short_videos::-webkit-scrollbar{
+     display: none;
+}
+
+.Short_videos{ /*problem not working*/
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+}/* video Container end */
+
+/*Inner Video joiner in Container*/
+.Svideo{
+     position: relative;
+     height: 100%;
+     width: 100%;
+     background-color: white;
+     scroll-snap-align: start;
+}
+/* videos file*/
+.video_player {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+}
+/* <!-- Video_sidebar --> */
+.video_Sidebar{
+  position: absolute;
+  top: 35%; /*48%*/
+  right: 10px;
+}
+/* <!-- Video_sidebar icon size --> */
+.video_Sidebar .material-symbols-outlined{
+  font-size: 28px;
+  cursor: pointer;
+}
+/* <!-- Video_sidebar icon position --> */
+.video_Sidebar_button{
+  padding: 20px;
+  text-align: center;
+}
+/* <!-- footer Group --> */
+.video_Footer{
+  position: relative;
+  bottom: 185px; /*150px*/
+  margin-left: 20px;
+  color: white;
+  display: flex;
+}
+
+.video_Footer_text{
+  flex: 1;
+}
+/*Tis is Titale group*/
+/* .video_Footer_text h3{
+  padding-bottom: 20px;
+} */
+.video_Footer_description{
+  padding-bottom: 10px;
+}
+/*song name and nodi icon group*/
+.video_Footer_Song_Group{
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+.video_Footer_icon{
+  position: absolute;
+}
+.video_Footer_Song_Group marquee{
+  height: fit-content;
+  margin-left: 30px;
+  width: 60%;
+}
+/*CD icon rotted Animation*/
+.video_Footer_CD{
+  animation: spinCD infinite 5s linear;
+  height: 45px; /*50px*/
+  /* filter: invert(1); *//*delead*/
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+@keyframes spinCD{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  /* .Short_videos{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  } */
+  .Short_videos {
+    height: 609px;
+    max-width: 498px;
+    border-radius: 17px;
+}
+.video_Sidebar {
+  top: 26%;
+}
+.video_Sidebar_button{
+  padding: 15px;
+}
+.video_Sidebar .material-symbols-outlined{
+  font-weight: bolder;
+}
+.video_Footer{
+  bottom: 179px;
+}
+.video_Footer_CD{
+  height: 43px;
+  right: 20px;
+}
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+  .video_Sidebar {
+    top: 17%;
+    right: -2px;
+}
+.Short_videos{
+  height: 96%;
+}
+.video_Sidebar_button {
+  padding: 17px;
+  font-weight: bolder;
+}
+.video_Sidebar .material-symbols-outlined {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.video_Footer{
+  bottom: 160px;
+}
+.video_Footer_text h3{
+  font-size: 15px;
+}
+.video_Footer_text p{
+  font-size: 12px;
+}
+.video_Footer_Song_Group marquee {
+  font-size: 11px;
+  width: 50%;
+}
+.video_Footer_CD {
+  height: 30px;
+  bottom: -5px;
+  right: 10px;
+}
+}

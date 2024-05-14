@@ -1,0 +1,261 @@
+body{
+     height: 100%;
+     font-family: Arial;
+     background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.cover_back{
+     
+     background: #FCF6F5FF;
+     width: 87%;
+     height: 93%;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border-radius: 20px;
+     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 14px rgba(163,135,162,0);;
+}
+.under-box-container{
+     position: absolute;
+     width: 100%;
+     height: 92.2%;
+     left: 0px;
+     top: 60px;
+     /* background: linear-gradient(109.5deg, #E3D7D7 0%, #EDBFE6 0.01%, rgba(221, 203, 203, 0.26) 99.33%); */
+     border-radius:  0 0 20px 20px;
+     overflow-y: scroll;
+}
+.boxes{
+     columns: 3;
+     gap: 12px;
+     align-content: center;
+     flex: 5;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     /* grid-gap: 33px; */
+     margin-left: 20px;
+     margin-bottom: 10px;
+}
+.request{
+     background: #D42727;
+     width: 370px;
+     height: 165px;
+     background: #fffefe;
+     box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.4);
+     border-radius: 0px 30px;
+     margin-left: 16px;
+     margin-top: 10px;
+   }
+ .Cross_sign{
+     cursor: pointer;
+     margin-right: -5px;
+     margin-top: -20px;
+     
+   }
+   .Cross_sign .hov-box{
+    width: 66px;
+    height: 57px;
+    position: absolute;
+    /* z-index: 5; */
+    margin: -14px;
+    margin-left: -13px;
+    margin-top: -18px;
+    background: rgba(199, 167, 211, 0.35);
+    border-radius: 0px 30px 0px 0px;
+    opacity: 0;
+    transition: 0.5s;
+   }
+   .Cross_sign .hov-box:hover{
+    opacity: 1;
+   }
+   
+   .Cross_sign img{
+     width: 30px;
+   }
+   .request .info{
+     display: flex;
+     gap: 1rem;
+     margin-bottom: 12px;
+     align-items: center;
+     justify-content: space-around;
+   }
+   .request .info h5{
+     color: #e80b0b;
+     font-weight: bolder;
+     font-size: 21px;
+     line-height: 17px;
+   }
+   .request .info p{
+     color: #fb0404;
+     font-size: 13px;
+     font-weight: bold;
+     margin: -30px;
+     margin-left: 1px;
+   }
+   .profile-photo{
+    align-self:auto;
+    border: 3px solid hsl(252, 75%, 60%);
+    width: 3.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: -4px;
+    margin-top: 27px;
+   }
+   .profile-photo img{
+    display: block;
+    width: 100%;
+}
+ .profile-name{
+  margin-left: -40px;
+  margin-top: -36px;
+ }
+   .request .action{
+     display: flex;
+     gap: 3rem;
+     margin-left: 57px;
+     margin-top: 20px;
+   }
+   .request .action .butan{
+     /* position: absolute; */
+     width: 110px;
+     height: 43px;
+     /* background: #D9D9D9; */
+     border-radius: 7px;
+     cursor: pointer;
+     font-size: 18px;
+     font-weight: bold;
+     align-items: center;
+     
+   }
+   .request .action .btn_A{
+     background: #ED4C67;
+     border:3px solid #fff;
+     color: #e5e5f7;
+   }
+   .request .action .btn_A:hover{
+     background: #d2dae2;
+     color: #1e272e;
+     border:3px solid #575fcf;
+   }
+   .request .action .btn_B:hover{
+     background: #ED4C67;
+     border:3px solid #fff;
+     color: #e5e5f7;
+   }
+
+   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .boxes{
+         columns: 2;
+         grid-template-columns: 1fr 1fr;
+         gap: 10px;
+    }
+    .request{
+         width: 317px;
+         height: 157px;
+         margin-left: 10px;
+    }
+    .request .info{
+      margin-bottom: 5px;
+    }
+    .profile-photo{
+      width: 45px;
+      margin-left: -10px;
+    }
+    .profile-name {
+      margin-left: -38px;
+      margin-top: -20px;
+    }
+    .request .info h5 {
+      font-size: 19px;
+      line-height: 17px;
+  }
+
+  .request .info p{
+    font-size: 12px;
+    margin: -23px;
+    margin-left: 0px;
+}
+
+    .request .action{
+      padding: 20px;
+    }
+    .Cross_sign .hov-box{
+      width: 61px;
+      height: 47px;
+      margin-left: -16px;
+      margin-top: -11px;
+    }
+    .request .action{
+      margin: 3px;
+    }
+    .request .action .butan{
+      width: 97px;
+      height: 37px;
+      border-radius: 11px;
+      font-size: 13px;
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+    .boxes{
+         columns: 1;
+         gap: 7px;
+         grid-template-columns: 1fr;
+    }
+    
+    .request{
+      width: 228px;
+      height: 107px;
+      margin-left: 50px;
+ }
+ .request .info{
+   margin-bottom: 5px;
+ }
+ .profile-photo{
+   width: 27px;
+   margin-left: -5px;
+   margin-top: 10px;
+ }
+ .profile-name {
+   margin-left: -20px;
+   margin-top: -27px;
+ }
+ .request .info h5 {
+   font-size: 12px;
+}
+
+.request .info p{
+ font-size: 10px;
+ margin: -19px;
+ margin-left: 1px;
+}
+
+ .request .action{
+   padding: 20px;
+ }
+ .Cross_sign {
+  cursor: pointer;
+  margin-right: 2px;
+  margin-top: 5px;
+ }
+
+ .Cross_sign img {
+  width: 17px;
+}
+ .Cross_sign .hov-box {
+    width: 44px;
+    height: 33px;
+    margin-left: -11px;
+    margin-top: -13px;
+    opacity: 1;
+}
+ .request .action{
+   margin: 4px;
+ }
+ .request .action .butan{
+   width: 74px;
+   height: 28px;
+   border-radius: 9px;
+   font-size: 12px;
+ }
+}

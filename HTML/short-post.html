@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Post / Short video Uploading</title>
+     <!-- Font Awesome Icons -->
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+     <!-- Google Fonts  -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+     <!-- Stylesheet -->
+     <link rel="stylesheet" href="../css/short-post.css">
+</head>
+<body>
+     <div class="container"> <!--All box Container-->
+          <input type="file" id="file-input" multiple />
+          <label for="file-input"> <!--Choose file Option -->
+               <i class="fa-solid fa-arrow-up-from-bracket"></i>
+               &nbsp; Choose Files To Upload
+          </label>
+          <div id="num-of-files">No Files Chosen</div> <!--Show How Mane File shellacked-->
+          <ul id="files-list"></ul> <!--Output Section using js-->
+
+          <div class="wrapper"> <!--Text Container-->
+               <h2>Caption:</h2>
+               <textarea spellcheck="false" placeholder="Type something here..." required></textarea>
+           </div>
+           
+          <button type="submit">Upload</button>
+     </div>
+     <script src="../JS/short_post.js"></script>
+</body>
+</html>
